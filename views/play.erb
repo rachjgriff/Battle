@@ -1,3 +1,13 @@
 <%=@player_1%> vs. <%=@player_2%>
+<br>
 
 <%=@player_1%> = 100 Hit Points
+<br>
+
+<h1>ATTACK!</h1>
+<form action="/attack" method="get">
+  <label for="attack_player_2">
+    Attack <%=@player_2%>
+    <input type="submit" value="ATTACK!">
+  </label>
+</form>
