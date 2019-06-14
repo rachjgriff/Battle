@@ -1,13 +1,13 @@
-<%=@player_1_name%> vs. <%=@player_2_name%>
+<%=@game.player_1.name%> vs. <%=@game.player_2.name%>
 <br>
 
-<%=@player_2_name%> = <%=@player_2_hit_points%> Hit Points
+<%=@game.player_2.name%> = <%=@game.player_2.hit_points%> Hit Points
 <br>
 
 <h1>ATTACK!</h1>
 <form action="/attack" method="get">
   <label for="attack_player_2">
-    Attack <%=@player_2_name%>
+    Attack <%=@game.player_2.name%>
     <input type="submit" value="ATTACK!">
   </label>
 </form>
